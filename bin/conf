@@ -2,5 +2,9 @@ contens="bashcms2_contents"	#記事リポジトリの名前
 app="bashcms2"			#本体のリポジトリの名前
 contens_owner="Sugita-Takashi"	#記事リポジトリの持ち主
 wwwdir="/var/www"		#記事リポジトリやbashcms2を置くディレクトリ
+<<<<<<< HEAD
 contentsdir="$wwwdir/$contens"	#記事リポジトリのパス
+=======
+contensdir="$wwwdir/$contens"	#記事リポジトリのパス
+>>>>>>> be40ca9f9fdf69f60f377168a219f3d55272011b
 appdir="$wwwdir/$app"		#bashcms2をインストールするパス
