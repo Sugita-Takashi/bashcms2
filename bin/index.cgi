@@ -1,5 +1,5 @@
 #!/bin/bash
-source "$(dirname $0)/conf"
+source "$(dirname $0)/bin/conf"
 
 md="$contentsdir/posts/template/main.md"
 
