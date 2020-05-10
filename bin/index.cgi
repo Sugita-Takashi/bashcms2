@@ -12,7 +12,7 @@ md="$contentsdir/posts/template/main.md"
 [ -f "$md" ]
 
 ### MAKE METADATA ###
-cat << FIN > $tmp-meta.ymal
+cat << FIN > $tmp-meta.yaml
 ---
 created_time: $(date -f - < $datadir/$dir/created_time)
 modified_time: $(date -f - < $datadir/$dir/$modified_time)
