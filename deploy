@@ -8,7 +8,8 @@ mkdir -p "$logdir" "$datadir"
 chown apache:apache "$logdir" "$datadir"
 
 ### INSTALL THIS SYSTEM ###
-rsync -av --delete "$(dirname $0)/bin/" "$appdir/"
+#rsync -av --delete "$(dirname $0)/bin/" "$appdir/"
+rsync -av "$(dirname $0)/bin/" "$appdir/"
 chown apache:apache "$appdir" -R
 
 ### RENAME FETCH CGI ###
