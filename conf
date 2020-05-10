@@ -1,0 +1,10 @@
+contents="bashcms2_contents"	#記事リポジトリの名前
+app="bashcms2"			#本体のリポジトリの名前
+contents_owner="Sugita-Takashi"	#記事リポジトリの持ち主
+wwwdir="/var/www"		#記事リポジトリやbashcms2を置くディレクトリ
+contentsdir="$wwwdir/$contents"	#記事リポジトリのパス
+appdir="$wwwdir/$app"		#bashcms2をインストールするパス
+viewdir="$appdir/bin/view"
+logdir="/var/log/$contents"
+datadir="${contentsdir}_data"
+export LANG=ja_JP.UTF-8

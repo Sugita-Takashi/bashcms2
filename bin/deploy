@@ -19,10 +19,10 @@ rnd=$(cat /dev/urandom | tr -cd 0-9a-zA-Z | head -c 32)
 mv "fetch" "fetch_$rnd.cgi"
 
 ### PULL ARTICLE REPO ###
-rm -rf "${contensdir:?}"
+rm -rf "${contentsdir:?}"
 cd "$wwwdir"
-git clone "https://github.com/$contens_owner/$contens"
-chown apache:apache "$contensdir" -R
+git clone "https://github.com/$contents_owner/$contents"
+chown apache:apache "$contentsdir" -R
 
 
 echo "call fetch_$rnd.cgi from GitHub"
